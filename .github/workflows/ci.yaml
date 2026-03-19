@@ -27,4 +27,4 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           push: true
-          tags: cjp37/python-app:${{ env.$GITHUB_ENV }}
+          tags: cjp37/python-app:${{ env.COMMIT_ID }}
