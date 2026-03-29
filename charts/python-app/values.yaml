@@ -2,7 +2,7 @@ replicaCount: 1
 image:
   repository: cjp37/python-app
   pullPolicy: IfNotPresent
-  tag: 4df053
+  tag: 94da7f
 imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""
