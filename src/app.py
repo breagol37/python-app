@@ -6,13 +6,14 @@ import datetime, socket
 
 app = Flask(__name__)
 
-@app.route('/api/v1/details')
+@app.route('/api/v1/info')
 
-def details():
+def info():
     return jsonify({
         'time': datetime.datetime.now().strftime("%I:%M:%S%p on %B %d, %Y"),
         'hostname': socket.gethostname(),
-        'message': 'You arae doing great, human!!:)'
+        'message': 'You arae doing great, human!!:)',
+        'deployed_on': 'kubernetes'
     })
 
 @app.route('/api/v1/health')
